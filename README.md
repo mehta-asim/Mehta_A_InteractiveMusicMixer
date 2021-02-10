@@ -106,7 +106,7 @@ _For more literature, please refer to the [Documentation](https://www.w3schools.
 <!-- ROADMAP -->
 ## Roadmap
 
-See the [open issues](https://github.com/mehta-asim/Mehta_A_SVGIconSet/issues) for a list of proposed features (and known issues).
+See the [open issues](https://github.com/mehta-asim/Mehta_A_InteractiveMusicMixerissues) for a list of proposed features (and known issues).
 
 <!-- LICENSE -->
 ## License
@@ -116,4 +116,4 @@ Distributed under the MIT License. See `LICENSE` for more information.
 <!-- CONTACT -->
 ## Contact
 Asim Mehta<br>
-Project Link: [https://github.com/mehta-asim/Mehta_A_SVGIconSet](https://github.com/mehta-asim/Mehta_A_SVGIconSet)
+Project Link: [https://github.com/mehta-asim/Mehta_A_InteractiveMusicMixer](https://github.com/mehta-asim/Mehta_A_InteractiveMusicMixer)
