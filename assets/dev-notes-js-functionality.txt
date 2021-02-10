@@ -1,0 +1,107 @@
+JS Functionality
+
+Creating Variables/Constants
+
+const <name> = document.querySelectorAll("class/idname")
+
+var puzzlePiece;
+
+var audio = new Audio('audio/disc.wav');
+
+
+
+Creating Functions
+
+Change Bg Image
+function changeBg() {
+
+		let currentImage = this.dataset.imageref;
+
+		dropZoneContainer.style.backgroundImage = `url(images/backGround${currentImage}.jpg)`;
+	}
+
+Drag and Drop Functions alongwith highlighting containers
+
+function dragStart(){
+		console.log('started draggin');
+		puzzlePiece = this.dataset.piece;
+		pieceRef = this.dataset.pieceref;
+		
+		dragImages[pieceRef].style.filter = "grayscale(100%)";
+		// debugger;
+
+	}
+
+	function draggedEnter(event){
+		event.preventDefault();
+		console.log('dragged enter');
+		dropZones[this.dataset.zone].style.backgroundColor = "white";
+		dropZones[this.dataset.zone].style.opacity = "0.5";
+	}
+
+	function draggedOver(event){
+		event.preventDefault();
+		console.log('dragged over');
+		}
+
+	function draggedLeave(event){
+		event.preventDefault();
+		console.log('dragged leave');
+		dropZones[this.dataset.zone].style.backgroundColor = "";
+		dropZones[this.dataset.zone].style.opacity = "1";
+	}
+
+
+	function dropped(event){
+
+		// let puzzlePiece = this.dataset.src;
+		event.preventDefault();
+		console.log('dropped something on me');
+		// debugger;
+		dropZones[this.dataset.zone].style.backgroundImage = `url(images/${puzzlePiece}.jpg)`;
+		dropZones[this.dataset.zone].style.backgroundRepeat = "no-repeat";
+		dropZones[this.dataset.zone].style.backgroundSize = "contain";
+		dropZones[this.dataset.zone].style.opacity = "1";
+		playAudio();
+		puzzlePieces[pieceRef].style.filter = "none";
+
+	}
+
+	function dragEnd(){
+		event.preventDefault();
+		console.log('drag ended');
+		puzzlePieces[pieceRef].style.filter = "none";
+	}
+
+
+
+Audio Functions
+
+function playAudio(){
+		audio.play();
+		audio.loop = true;
+	}
+
+
+Event Handling
+
+Change Image
+puzzleSelectors.forEach(button => button.addEventListener("click", changeBg));
+
+Drag and Drop
+dragImages.forEach(piece => piece.addEventListener("dragstart", dragStart));
+
+dropZones.forEach(zone => {
+		zone.addEventListener("dragenter",draggedEnter);
+		zone.addEventListener("dragover",draggedOver);
+		zone.addEventListener("dragleave",draggedLeave);
+		zone.addEventListener("drop",dropped);
+	})
+
+dragImages.forEach(piece => piece.addEventListener("dragend", dragEnd));
+
+
+Emulating a Click
+changeBg.call(puzzleSelectors[0]);
+
+
