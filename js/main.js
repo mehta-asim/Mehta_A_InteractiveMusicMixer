@@ -4,7 +4,7 @@
 	const instrumentIcons = document.querySelectorAll('#icons img'),
 		  playerIcons = document.querySelectorAll('#player div');
 
-	let xButton = document.querySelector('#container a');
+	let xButton = document.querySelector('#resetPage');
 
 
 	function dragStart(event){
@@ -24,6 +24,10 @@
 		// debugger;
 		event.target.appendChild(document.querySelector(`#${targetID}`));
 
+		changeImage(targetID,event.target.className);
+
+		changeContainer(event.target.className);
+
 		createAudio(targetID);
 		createPlay();
 		createStop();
@@ -36,6 +40,19 @@
 	}
 
 
+	function changeImage(imgId,classId){
+		// debugger;
+		let imG = document.querySelector(`.${classId} img`);
+		imG.src = `images/${imgId}-white.svg`;
+		imG.style.height = "60px";
+		imG.style.width = "60px";
+
+	}
+
+	function changeContainer(divClass){
+		let divContainer = document.querySelector(`.${divClass}`);
+		divContainer.style.opacity = "100%"; 
+	}
 	function reloadPage(){
 		window.location.reload();
 	}
@@ -129,13 +146,9 @@
 		pl.addEventListener("drop", dropped);
 	});
 
-	// stopButton.forEach(stopBtn => stopBtn.addEventListener("click", stopAudio));
 	xButton.addEventListener("click", reloadPage);
 
-	// playButton.addEventListener("click", playAudio);
-
-	// stopButton.addEventListener("stop", stopAudio);
-
+	
 	
 
 })();
