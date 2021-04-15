@@ -25,7 +25,7 @@ header
 	margin-left: 177.6px;
 	display: flex;
 }
-header img
+#heading
 {
 	margin-top: 58.5px;
 }
@@ -124,6 +124,7 @@ header img
 	margin-left: auto;
 	opacity: 0.7;
 	transition: all ease 0.5s;
+	margin-top: 30px;
 }
 
 #resetPage:hover{

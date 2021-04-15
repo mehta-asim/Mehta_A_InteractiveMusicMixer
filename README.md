@@ -2,7 +2,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/mehta-asim/Mehta_A_InteractiveMusicMixer">
-    <!-- <img src="images/logo.svg" alt="Logo" width="110" height="165"> -->
+    <img src="images/heading-black.svg" alt="Logo" width="600" height="170">
   </a>
 
   <h3 align="center">Interactive Music Mixer</h3>
@@ -31,7 +31,6 @@
       <a href="#about-the-project">About The Project</a>
       <ul>
         <li><a href="#built-with">Built With</a></li>
-        <li><a href="research">Research</a></li>
       </ul>
     </li>
     <li>
@@ -57,21 +56,6 @@ and create a unique sound each time.
 * [HTML 5](https://www.w3.org/TR/2008/WD-html5-20080122/)
 * [CSS](https://www.w3.org/Style/CSS/Overview.en.html)
 * [Javascript](https://www.w3schools.com/js/DEFAULT.asp)
-
-### Research
-
-<h3>Design</h3>
-First I researched the look and feel for the webpage and I found following material:<br>
-<img src="assets/Design-ref/brick-wall-1.jpg" width="300" height="200">
-<img src="assets/Design-ref/brick-wall-2.jpg" width="300" height="200">
-<img src="assets/Design-ref/brick-wall-3.jpg" width="300" height="200">
-<br>
-Next I researched the icon styles,<br>
-<img src="assets/Design-ref/icon-reference-1.jpg" width="300" height="324">
-<br>
-and then I researched the text,<br>
-<img src="assets/Design-ref/text-reference.jpg" width="236" height="236">
-
 
 <!-- GETTING STARTED -->
 ## Getting Started
