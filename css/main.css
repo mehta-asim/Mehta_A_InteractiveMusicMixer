@@ -23,6 +23,7 @@ body
 header
 {
 	margin-left: 177.6px;
+	display: flex;
 }
 header img
 {
@@ -39,23 +40,54 @@ header img
 	justify-content: space-between;
 }
 
+#player div
+{
+	width: 110px;
+	height: 350px;
+	background-image: url('../images/player-icon.png');
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-repeat: no-repeat;
+}
+
+#player div img
+{
+	margin-top: 25px;
+	margin-left: 5px;
+
+}
+
+#player div button{
+	width: 40px;
+	height: 40px;
+	margin-top: 20px;
+}
+
 #icons
 {
-	margin-left: 322px;
-	margin-right: 322px;
+	margin-left: auto;
+	margin-right: auto;
 	margin-top: 110px;
 	display: flex;
 	flex-direction: column;
-	justify-content: flex-start;
+	align-items: center;
 }
 
 
 #row1, #row2
 {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
+/* 	display: flex;
+	flex-direction: row; */
+}
 
+#row1 :nth-child(n+2){
+	margin-left: 20px;
+}
+
+#row2 :nth-child(n+2){
+	margin-left: 20px;
 }
 
 #row2
@@ -66,4 +98,21 @@ header img
 #icons img
 {
 	cursor: pointer;
+}
+
+#resetPage{
+	order: 1;
+	margin-left: auto;
+}
+a{
+	cursor: pointer;
+	text-decoration: none;
+	font-size: 30px;
+	color: white;
+}
+
+input
+{
+	transform: rotate(-90deg);
+	margin-top: 80px;
 }
