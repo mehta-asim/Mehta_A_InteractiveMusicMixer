@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 127.11 147.59">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="white">
+      <g id="play-white">
+        <path id="triangle_big" class="cls-1" d="M127.09,76.17,0,143.57,5.05,0ZM.42,4,4.6,147.59,127.11,72.16Z"/>
+        <g id="triangle_small">
+          <polygon id="cyan" class="cls-1" points="19.6 23.4 16.15 121.45 102.95 75.41 19.6 23.4"/>
+          <polygon id="purple" class="cls-1" points="16.44 26.12 19.29 124.19 102.96 72.68 16.44 26.12"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

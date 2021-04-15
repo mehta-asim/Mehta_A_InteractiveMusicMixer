@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 127.11 147.59">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #01ffff;
+      }
+
+      .cls-2 {
+        fill: #9d72ff;
+      }
+    </style>
+  </defs>
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="play">
+      <g id="triangle_big">
+        <polygon id="cyan" class="cls-1" points="5.05 0 0 143.57 127.09 76.17 5.05 0"/>
+        <polygon id="purple" class="cls-1" points="0.42 3.99 4.6 147.59 127.11 72.16 0.42 3.99"/>
+      </g>
+      <g id="triangle_small">
+        <polygon id="cyan-2" data-name="cyan" class="cls-2" points="19.6 23.4 16.15 121.45 102.95 75.41 19.6 23.4"/>
+        <polygon id="purple-2" data-name="purple" class="cls-2" points="16.44 26.12 19.29 124.19 102.96 72.68 16.44 26.12"/>
+      </g>
+    </g>
+  </g>
+</svg>
